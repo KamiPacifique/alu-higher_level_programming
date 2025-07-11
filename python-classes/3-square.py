@@ -3,6 +3,7 @@
 validation and area calculation."""
 
 
+
 class Square:
     """Square class with a private size attribute and area method."""
 
