@@ -20,3 +20,13 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
+
+    @property
+    def width(self):
+        """Width getter."""
+        return self.__width
+
+    @property
+    def height(self):
+        """Height getter."""
+        return self.__height
