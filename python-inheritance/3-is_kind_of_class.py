@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """Define a function to check if objec is instance or inherited from class"""
 
 
