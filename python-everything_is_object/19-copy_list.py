@@ -1,5 +1,3 @@
-[1, 2, 3]
-[1, 2, 3]
-[1, 2, 3]
-True
-False
+#!/usr/bin/python3
+def copy_list(l):
+    return l[:]
