@@ -1,27 +1,24 @@
 #!/usr/bin/python3
-"""Defines a Square class that inherits from Rectangle."""
+"""Inherits BaseGeometry class"""
 
+
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Represents a square, inherits from Rectangle."""
+    """Inherits from Rectangle."""
 
     def __init__(self, size):
-        """Initialize a Square instance.
-
-        Args:
-            size (int): The size of the square's sides.
-        """
+        """set the values"""
         self.integer_validator("size", size)
-        self.__size = size
-        # Initialize Rectangle with width and height both equal to size
         super().__init__(size, size)
+        self.__size = size
 
     def area(self):
-        """Return the area of the square."""
-        return self.__size * self.__size
+        """Area of Square"""
+        return self.__size ** 2
 
     def __str__(self):
-        """Return the string representation of the square."""
-        return "[Rectangle] {}/{}".format(self.__size, self.__size)
+        """Returns [Square] <width>/<height>."""
+        return super().__str__()
