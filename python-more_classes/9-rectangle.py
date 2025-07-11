@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines Rectangle class with square creation and comparison."""
 
+
 class Rectangle:
     """Rectangle class with width, height, print symbol, instance count."""
 
