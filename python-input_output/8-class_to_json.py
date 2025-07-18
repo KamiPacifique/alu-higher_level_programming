@@ -13,7 +13,7 @@ def class_to_json(obj):
 
     Args:
         obj: An instance of a Class. All attributes of the obj Class are
-             assumed to be serializable: list, dictionary, 
+             assumed to be serializable: list, dictionary,
              string, integer, and boolean.
 
     Returns:
