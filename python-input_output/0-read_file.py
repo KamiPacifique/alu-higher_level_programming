@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
 Module: read_file
-This module provides a function to read and print the contents of a UTF-8 text file.
+This module provide function to read and print the content of UTF8 text file
 """
+
 
 def read_file(filename=""):
     """
