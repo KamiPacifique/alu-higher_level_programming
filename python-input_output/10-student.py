@@ -75,7 +75,7 @@ if __name__ == "__main__":
     print(selected_attrs_dict)
 
     print("-" * 30)
-    # Demonstrate to_json with an invalid attrs argument 
+    # Demonstrate to_json with an invalid attrs argumet
     invalid_attrs_dict = student_instance.to_json(attrs="not a list")
     print("Student object with invalid attrs argument :")
     print(invalid_attrs_dict)
