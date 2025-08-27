@@ -54,7 +54,7 @@ class Student:
 
     def reload_from_json(self, json):
         """
-        Replaces all attributes of the Student 
+        Replaces all attributes of the Student
         instance with values from a dictionary.
 
         Args:
@@ -94,7 +94,7 @@ if __name__ == "__main__":
         "first_name": "Bob",
         "last_name": "Johnson",
         "age": 30,
-        "new_attribute": "value" 
+        "new_attribute": "value"
     }
     print("Reloading Student instance with new data:")
     print(new_data)
