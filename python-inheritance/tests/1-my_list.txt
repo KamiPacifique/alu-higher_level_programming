@@ -1,34 +1,30 @@
-#!/usr/bin/python3
-MyList = __import__('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 
-# Test 1: basic functionality
-my_list = MyList()
-my_list.append(1)
-my_list.append(4)
-my_list.append(2)
-my_list.append(3)
-my_list.append(5)
-print(my_list)
-my_list.print_sorted()
-print(my_list)
+>>> new_list = MyList()
 
-# Test 2: negative numbers
-my_list2 = MyList()
-my_list2.append(-1)
-my_list2.append(3)
-my_list2.append(0)
-print(my_list2)
-my_list2.print_sorted()
+>>> new_list
+[]
 
-# Test 3: empty list
-my_list3 = MyList()
-print(my_list3)
-my_list3.print_sorted()
+>>> new_list.print_sorted()
+[]
 
-# Test 4: already sorted
-my_list4 = MyList()
-my_list4.append(1)
-my_list4.append(2)
-my_list4.append(3)
-print(my_list4)
-my_list4.print_sorted()
+>>> new_list.append(4)
+
+>>> new_list
+[4]
+
+>>> new_list.append(2)
+
+>>> new_list
+[4, 2]
+
+>>> new_list.append(-1)
+
+>>> new_list
+[4, 2, -1]
+
+>>> new_list.print_sorted()
+[-1, 2, 4]
+
+>>> new_list
+[4, 2, -1]
