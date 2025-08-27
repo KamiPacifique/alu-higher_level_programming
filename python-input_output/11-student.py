@@ -7,7 +7,7 @@ and deserialization (reload_from_json) capabilities.
 class Student:
     """
     A Student class that defines a student by first_name, last_name, and age.
-    It includes methods for converting to a dictionary representation (to_json)
+    It includes methods for converting to a dictionary represntation (to_json)
     and for reloading attributes from a dictionary (reload_from_json).
     """
 
@@ -28,7 +28,8 @@ class Student:
         """
         Retrieves a dictionary representation of a Student instance.
 
-        If 'attrs' is a list of strings, only attribute names contained in this list
+        If 'attrs' is a list of strings, only attribute
+        names contained in this list
         will be retrieved. Otherwise, all attributes will be retrieved.
 
         Args:
@@ -52,7 +53,8 @@ class Student:
 
     def reload_from_json(self, json):
         """
-        Replaces all attributes of the Student instance with values from a dictionary.
+        Replaces all attributes of the Student 
+        instance with values from a dictionary.
 
         Args:
             json (dict): A dictionary where keys are attribute names and values
@@ -91,7 +93,7 @@ if __name__ == "__main__":
         "first_name": "Bob",
         "last_name": "Johnson",
         "age": 30,
-        "new_attribute": "value" # Demonstrating adding a new attribute
+        "new_attribute": "value" 
     }
     print("Reloading Student instance with new data:")
     print(new_data)
@@ -105,4 +107,4 @@ if __name__ == "__main__":
     # Verify individual attributes after reload
     print(f"Student first name: {student_instance.first_name}")
     print(f"Student age: {student_instance.age}")
-    print(f"Student new attribute: {student_instance.new_attribute}") # Accessing the newly added attribute
+    print(f"Student new attribute: {student_instance.new_attribute}")
