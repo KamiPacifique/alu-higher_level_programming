@@ -75,14 +75,14 @@ if __name__ == "__main__":
 
     print("-" * 30)
 
-    # Demonstrate to_json with an invalid attrs argument (should return all attributes)
+    # Demonstrate to_json with an invalid attrs argument 
     invalid_attrs_dict = student_instance.to_json(attrs="not a list")
-    print("Student object with invalid attrs argument (returns all attributes):")
+    print("Student object with invalid attrs argument :")
     print(invalid_attrs_dict)
 
     print("-" * 30)
 
-    # Demonstrate to_json with an attribute that doesn't exist (it will be ignored)
-    non_existent_attr_dict = student_instance.to_json(attrs=["first_name", "non_existent_attribute"])
+    # Demonstrate to_json with an attribute that doesn't exist)
+    non = student_instance.to_json(attrs=["first_name", "non_existent_att"])
     print("Student object with a non-existent attribute in attrs list:")
-    print(non_existent_attr_dict)
+    print(non)
