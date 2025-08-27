@@ -4,6 +4,7 @@ This module defines a Student class with an enhanced to_json method
 that allows filtering of attributes for JSON serialization.
 """
 
+
 class Student:
     """
     A Student class that defines a student by first_name, last_name, and age.
@@ -74,7 +75,6 @@ if __name__ == "__main__":
     print(selected_attrs_dict)
 
     print("-" * 30)
-
     # Demonstrate to_json with an invalid attrs argument 
     invalid_attrs_dict = student_instance.to_json(attrs="not a list")
     print("Student object with invalid attrs argument :")
