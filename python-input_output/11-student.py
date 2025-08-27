@@ -4,6 +4,7 @@ This module defines a Student class with serialization (to_json)
 and deserialization (reload_from_json) capabilities.
 """
 
+
 class Student:
     """
     A Student class that defines a student by first_name, last_name, and age.
