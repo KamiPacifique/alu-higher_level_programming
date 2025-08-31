@@ -1,1 +1,1 @@
-python-everything is object
+sql introduction
