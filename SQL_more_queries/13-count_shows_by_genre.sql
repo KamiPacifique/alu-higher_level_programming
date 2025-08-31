@@ -4,7 +4,7 @@
 -- Results sorted by number_of_shows in descending order
 
 SELECT
-    genres.name AS genre,
+    tv_genres.name AS genre,
     COUNT(tv_show_genres.show_id) AS number_of_shows
 FROM
     genres
