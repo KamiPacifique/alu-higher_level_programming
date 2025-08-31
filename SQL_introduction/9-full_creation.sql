@@ -1,4 +1,4 @@
-- 9-full_creation.sql
+-- 9-full_creation.sql
 
 CREATE TABLE IF NOT EXISTS second_table (
     id INT,
