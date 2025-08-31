@@ -1,18 +1,13 @@
--- List all genres and the number of shows linked to each
--- Columns: genre, number_of_shows
--- Only genres with linked shows are displayed
--- Results sorted by number_of_shows in descending order
-
+-- 13. Number of shows by genre
+-- List all genres with count of linked shows, ordered descending
 SELECT
-    tv_genres.name AS genre,
-    COUNT(tv_show_genres.show_id) AS number_of_shows
+    tg.name AS genre,
+    COUNT(tsg.show_id) AS number_of_shows
 FROM
-    genres
+    tv_genres tg
 JOIN
-    tv_show_genres ON genres.id = tv_show_genres.genre_id
+    tv_show_genres tsg ON tg.id = tsg.genre_id
 GROUP BY
-    genres.name
-HAVING
-    number_of_shows > 0
+    tg.name
 ORDER BY
     number_of_shows DESC;
