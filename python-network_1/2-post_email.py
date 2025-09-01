@@ -1,15 +1,17 @@
 #!/usr/bin/python3
-"""Sends a POST request to a given URL with an email parameter and displays the response."""
-import urllib.parse
+"""I documented you"""
+
 import urllib.request
+import urllib.parse
 import sys
 
-url = sys.argv[1]
-email = sys.argv[2]
-
-# Encode the email into a dictionary, then into bytes
-data = urllib.parse.urlencode({'email': email}).encode('utf-8')
-
-# Perform the POST request and read the response
-with urllib.request.urlopen(url, data=data) as response:
-    print(response.read().decode('utf-8'))
+if __name__ == '__main__':
+    """"Documented"""
+    url = sys.argv[1]
+    message = {"email": sys.argv[2]}
+    data = urllib.parse.urlencode(message)
+    data = data.encode('ascii')
+    req = urllib.request.Request(url, data)
+    with urllib.request.urlopen(req) as response:
+        content = response.read()
+        print("{}".format(content.decode("utf-8")))
