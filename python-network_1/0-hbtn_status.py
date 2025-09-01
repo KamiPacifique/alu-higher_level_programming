@@ -1,12 +1,20 @@
 #!/usr/bin/python3
-"""Fetch a URL and display the response body info using urllib."""
+"""
+Documentation
+Fetches data from the url using
+the urllib module in python
+"""
+
 import urllib.request
 
-url = "https://alu-intranet.hbtn.io/status"
+url = 'https://intranet.hbtn.io/status'
+if url.startswith('https://'):
+    url = 'https://alu-intranet.hbtn.io/status'
 
-with urllib.request.urlopen(url) as response:
-    body = response.read()
-    print("Body response:")
-    print("\t- type:", type(body))
-    print("\t- content:", body)
-    print("\t- utf8 content:", body.decode("utf-8"))
+if __name__ == '__main__':
+    with urllib.request.urlopen(url) as f:
+        content = f.read()
+        print("Body response:")
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode('utf-8')))
