@@ -2,7 +2,7 @@
 """Fetch a URL and display the response body info using urllib."""
 import urllib.request
 
-url = "https://alu-intranet.hbtn.io/status"
+url = "http://0.0.0.0:5050/status"
 
 with urllib.request.urlopen(url) as response:
     body = response.read()
